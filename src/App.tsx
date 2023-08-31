@@ -1,10 +1,17 @@
 import "./App.css";
-import { Example } from "./components/Example/Example";
-
+import Text from "./components/Text/Text";
+import Card from "./components/Card/Card"; 
 function App() {
   return (
     <>
-      <Example />{" "}
+      <Text />{" "}
+      <div className="App">
+      <Card
+        title="Sample Card"
+        img="https://example.com/sample-image.jpg"
+        text="This is a sample card with dynamic background color."
+      />
+    </div>
     </>
   );
 }
